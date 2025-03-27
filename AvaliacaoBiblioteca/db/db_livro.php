@@ -18,15 +18,16 @@ $dataChegada = $_POST['data_chegada'];
 $genero = $_POST['genero'];
 $sinopse = $_POST['sinopse'];
 
-$stmt = $conn->prepare('INSERT INTO (titulo, autor, $data_publicacao, data_chegada, genero, sinopse) VALUES (?, ?, ?, ?, ?, ?)');
+$stmt = $conn->prepare('INSERT INTO livros (titulo, autor, data_publicacao, data_chegada, genero, sinopse) VALUES (?, ?, ?, ?, ?, ?)');
 $stmt->bind_param('ssssss', $titulo, $autor, $dataPublicacao, $dataChegada, $genero, $sinopse);
 
-if($conn->query($sql) == true){
+if($stmt->execute()){
     echo 'O livro foi cadastrado com sucesso!';
 } else{
-    echo 'Erro: ' . $sql . '<br>' .$conn->error;
+    echo 'Erro: ' . $stmt->error;
 }
 
+$stmt->close();
 $conn->close();
 
 
