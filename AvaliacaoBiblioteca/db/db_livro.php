@@ -13,8 +13,8 @@ if($conn->connect_error){
 
 $titulo = $_POST['titulo'];
 $autor = $_POST['autor'];
-$dataPublicacao = $_POST['data_publicacao'];
-$dataChegada = $_POST['data_chegada'];
+$dataPublicacao = $_POST['dataPublicacao'];
+$dataChegada = $_POST['dataChegada'];
 $genero = $_POST['genero'];
 $sinopse = $_POST['sinopse'];
 
