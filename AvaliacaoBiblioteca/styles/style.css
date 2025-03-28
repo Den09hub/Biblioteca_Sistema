@@ -4,6 +4,8 @@
     box-sizing: border-box;
 }
 
+/* Cabeçalho da Página */
+
 .cabecalho{
     background-color: #8685ef;
     height: 15vh;
@@ -11,7 +13,6 @@
 }
 
 .lista-caminho{
-    color: #ffffff;
     display: flex;
     justify-content: center;
     list-style: none;
@@ -21,9 +22,16 @@
     cursor: pointer;
 }
 
-.item-caminho:hover{
+.item-caminho a{
+    color: #ffffff;
+    text-decoration: none;
+}
+
+.item-caminho a:hover{
     color: #5756b8;
 }
+
+/* Formulário da Página */
 
 .bloco-formulario{
     display: flex;
@@ -53,7 +61,7 @@
 
 .bloco-formulario form button{
     width: 90px;
-    padding: 5px;
+    padding: 10px;
     background-color: #8685ef;
     color: #ffffff;
     border-radius: 5px;
