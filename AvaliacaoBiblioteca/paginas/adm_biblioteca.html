@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home</title>
+    <link rel="stylesheet" href="../styles/style.css">
+</head>
+<body>
+
+    <header class="cabecalho">
+        <nav>
+            <ul class="lista-caminho">
+                <li class="item-caminho"><a href="home_biblioteca.html"></a>Home</li>
+                <li class="item-caminho"><a href="catalago_biblioteca.html"></a>Catálago</li>
+                <li class="item-caminho"><a href="contato_biblioteca.html"></a>Contato</li>
+                <li class="item-caminho"><a href="adm_biblioteca.html"></a>ADM</li>
+            </ul>
+        </nav>
+    </header>
+
+    <main class="content-adm">
+        <h2>Cadastrar Livro</h2>
+        <div class="bloco-formulario">
+            <form action="../db/db_livro.php" method="POST">
+                <label for="titulo">Título:</label>
+                <input type="text" id="titulo" name="titulo" required>
+                
+                <label for="autor">Autor:</label>
+                <input type="text" id="autor" name="autor" required>
+        
+                <label for="dataPublicacao">Data da Publicação:</label>
+                <input type="date" id="dataPublicacao" name="dataPublicacao" required>
+        
+                <label for="dataChegada">Data da Chegada:</label>
+                <input type="date" id="dataChegada" name="dataChegada" required>
+        
+                <label for="genero">Gênero:</label>
+                <input type="text" id="genero" name="genero" required>
+        
+                <label for="sinopse">Sinopse:</label>
+                <input type="text" id="sinopse" name="sinopse" required>
+        
+                <button type="submit">Cadastrar</button>
+        
+            </form>
+        </div>
+        
+    </main>
+    
+</body>
+</html>
