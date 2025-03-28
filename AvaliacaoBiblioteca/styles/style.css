@@ -27,7 +27,6 @@
 
 .bloco-formulario{
     display: flex;
-    flex-direction: column;
     align-items: center;
     justify-content: center;
     height: 65vh;
@@ -38,7 +37,7 @@
     flex-direction: column;
     width: 100%;
     max-width: 30%;
-    gap: 2px;
+    gap: 5px;
 }
 
 .bloco-formulario form label{
@@ -59,7 +58,7 @@
     color: #ffffff;
     border-radius: 5px;
     border: none;
-    margin-top: 10px;
+    margin-top: 20px;
 }
 
 .bloco-formulario form button:hover{
